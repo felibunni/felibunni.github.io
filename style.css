@@ -1,5 +1,120 @@
 body {
     background-image: url('/images/freakyfashion.png');
     background-attachment: fixed;
-    background-color: #f3eae3;
+    background-color: white;
     }
+
+
+  /* Sökfält, inte större än innehållet */
+
+  .search {
+    width: max-content;
+    display: flex;
+    padding: 10px;
+    border-radius: 25px;
+    outline: 1px solid #696969;  
+    background: #f6f6f6;
+  }
+
+  .search-input {
+    font-size: 16px;
+    font-family: century gothic;
+    color: #8f8f8f;
+    margin-left: 10px;
+    border:none;
+    outline: none;
+    background: transparent;
+  }
+
+  .search-icon {
+    color: #8f8f8f;
+  }
+
+  .nav-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  }
+
+
+
+  /* Lektion grid med kolumner
+
+  .container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-auto-rows: 150px;
+  gap: 10px;
+  }
+
+  .container > div {
+  border: 2px solid red;
+  }
+
+  .container > img {
+  width: 100%
+  }
+
+
+
+
+
+/*första barn prioritering
+.container > :first-child {
+  border: 2px solid green;
+  grid-column: 1,3;
+}
+
+
+/* Layout med Flexbox
+
+.container {
+  display: flex;
+  gap: 10px;
+  flex-direction: row;
+}
+
+.container > div {
+  border: 2px solid red;
+  flex-grow: 1;
+  height: 200px;
+}
+
+.container > img {
+  width: 100%
+}
+   
+display: inline;
+
+slut*/
+
+
+
+   /* Medium devices (>=640px): 
+    @media (min-width: 640px) {
+        .image-grid {
+            grid-template-columns: repeat(2, 1fr);
+            grid-template-rows: repeat(2, 1fr);
+    }
+  }
+
+        /*
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+
+        /*
+    .popular-products {
+        display: grid;
+        background-color: gray;
+        gap: 10px;
+        padding: 10px;
+      }
+
+
+      display: grid;
+        grid-column-gap: 20px;
+        grid-row-gap: 20px;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        }
+        */

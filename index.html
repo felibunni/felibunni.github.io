@@ -1,86 +1,129 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="sv">
 <head>
     <title>Freaky Fashion</title>
     <link rel="stylesheet" href="style.css">
+
+    <!-- Google Material Symbol för sökikon -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
 </head>
 <body>
    
+    <!--Bild för logotyp-->
 <header>
-    <img src="/images/ff.png" alt="Logotyp">
-
-        <input type="text" placeholder="Sök produkt">
-        
-        <a href=""><img src="/svg/heartfull.svg" alt="heart fill"></a>
-        
-        <a href="checkout.html"><img src="/svg/basketfull.svg" alt="basket fill"></a>
-
-    <nav>
-        <ul>
-            <li>Nyheter</li>
-            <li>Topplistan</li>
-            <li>Rea</li>
-            <li>Kampanjer</li>
-        </ul>
-    </nav> 
+    <img src="/images/Logga.png" alt="Logotyp">
 </header>
 
-<hero>
-    <img src="/images/Hero.png" alt="Hero">
-    <h1>Lorem, ipsum dolor.</h1>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique quas incidunt vero laborum sit eveniet facilis nulla officiis officia dolor.</p>
+
+    <!-- Sökfält, visar ikon och text -->
+<form>
+    <div class="search">
+        <span class="search-icon material-symbols-outlined">search</span>
+        <input class="search-input" placeholder="Sök produkt">
+    </div>
+    <div class="heart-basket-icons">
+        <a href=""><img src="/svg/heartfull.svg" alt="heart fill"></a>
+        <a href="checkout.html"><img src="/svg/basketfull.svg" alt="basket fill"></a>
+    </div>
+</form>
+
+
+
+
+<nav>
+    <ul class="nav-list">
+        <li>Nyheter</li>
+        <li>Topplistan</li>
+        <li>Rea</li>
+        <li>Kampanjer</li>
+    </ul>
+</nav>
+
+<hero class="hero">
+    <div>
+        <img src="/images/Hero.png" alt="Hero">
+        <h1>Lorem, ipsum dolor.</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique quas incidunt vero laborum sit eveniet facilis nulla officiis officia dolor.</p>
+    </div>
 </hero>
 
+<!--"Spots exempel, img funkar"
+<h1>Layout med Flexbox</h1>
+<div class ="container">
+    <div>1</div>
+    <div>2</div>
+    <div>3</div>
+</div>
+-->
 
-<section class="products">
-    <div class="grid-item">
+<!--Grid exempel
+<h1>Layout med Grid</h1>
+<div class="container">
+    <div>1</div>
+    <div>2</div>
+    <div>3</div>
+    <div>4</div>
+    <div>5</div>
+    <div>6</div>
+    <div>7</div>
+    <div>8</div>
+</div>
+-->
+
+
+
+<section>
+<div class="produkter">
+    <div>
         <img src="/images/blackt-shirt.png" alt="produkt1">
+        <h2>Svart Tröja</h2>
+        <h2>199 SEK</h2>
+        <p>Levis</p>
     </div>
-    <h3 class="produkt">Svart T-Shirt</h3>
-    <h3 class="pris">199 SEK</h3>
-    <p class="typ">Levis</p>
-    <div class="grid-item">
+    <div>
         <img src="/images/blackt-shirt.png" alt="produkt2">
+        <h2>Svart Tröja</h2>
+        <h2>199 SEK</h2>
+        <p>Levis</p>
     </div>
-    <h3 class="produkt">Svart T-Shirt</h3>
-    <h3 class="pris">199 SEK</h3>
-    <p class="typ">Levis</p>
-    <div class="grid-item">
+    <div>
         <img src="/images/blackt-shirt.png" alt="produkt3">
+        <h2>Svart Tröja</h2>
+        <h2>199 SEK</h2>
+        <p>Levis</p>
     </div>
-    <h3 class="produkt">Svart T-Shirt</h3>
-    <h3 class="pris">199 SEK</h3>
-    <p class="typ">Levis</p>
-    <div class="grid-item">
+    <div >
         <img src="/images/blackt-shirt.png" alt="produkt4">
+        <h2>Svart Tröja</h2>
+        <h2>199 SEK</h2>
+        <p>Levis</p>
     </div>
-    <h3 class="produkt">Svart T-Shirt</h3>
-    <h3 class="pris">199 SEK</h3>
-    <p class="typ">Levis</p>
-    <div class="grid-item">
-        <img src="/images/blackt-shirt.png" alt="produkt5">
+    <div >
+        <img src="/images/blackt-shirt.png" alt="produkt4">
+        <h2>Svart Tröja</h2>
+        <h2>199 SEK</h2>
+        <p>Levis</p>
     </div>
-    <h3 class="produkt">Svart T-Shirt</h3>
-    <h3 class="pris">199 SEK</h3>
-    <p class="typ">Levis</p>
-    <div class="grid-item">
-        <img src="/images/blackt-shirt.png" alt="produkt6">
+    <div >
+        <img src="/images/blackt-shirt.png" alt="produkt4">
+        <h2>Svart Tröja</h2>
+        <h2>199 SEK</h2>
+        <p>Levis</p>
     </div>
-    <h3 class="produkt">Svart T-Shirt</h3>
-    <h3 class="pris">199 SEK</h3>
-    <p class="typ">Levis</p>
-    <div class="grid-item">
-        <img src="/images/blackt-shirt.png" alt="produkt7">
+    <div >
+        <img src="/images/blackt-shirt.png" alt="produkt4">
+        <h2>Svart Tröja</h2>
+        <h2>199 SEK</h2>
+        <p>Levis</p>
     </div>
-    <h3 class="produkt">Svart T-Shirt</h3>
-    <h3 class="pris">199 SEK</h3>
-    <p class="typ">Levis</p>
-    <div class="grid-item">
-        <img src="/images/blackt-shirt.png" alt="produkt8">
+    <div ></div>
+        <img src="/images/blackt-shirt.png" alt="produkt4">
+        <h2>Svart Tröja</h2>
+        <h2>199 SEK</h2>
+        <p>Levis</p>
     </div>
-    <h3 class="produkt">Svart T-Shirt</h3>
-    <h3 class="pris">199 SEK</h3>
-    <p class="typ">Levis</p>
+    
+</div>
 </section>
 
 <nav>
