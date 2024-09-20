@@ -2,6 +2,7 @@ body {
     background-image: url('/images/freakyfashion.png');
     background-attachment: fixed;
     background-color: white;
+    padding: 10px;
     }
 
 
@@ -30,91 +31,54 @@ body {
     color: #8f8f8f;
   }
 
+  /* Navigering */
+
   .nav-list {
   list-style: none;
   margin: 0;
   padding: 0;
   }
 
+/*Produktkort, över 640 px och över 1024 fungerar, men inte under 640 px*/
 
-
-  /* Lektion grid med kolumner
-
-  .container {
+  .products {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
-  grid-auto-rows: 150px;
   gap: 10px;
   }
 
-  .container > div {
+  .productname {
+    float: left;
+    font-size: 20px;
+    font-family: century gothic;
+    font-weight: bold;
+  }
+
+  .price {
+    float:right;
+    font-size: 20px;
+    font-family: century gothic;
+    font-weight: bold;
+  }
+
+  .products > img {
+    width: 100%
+  }  
+
+  .products > div {
   border: 2px solid red;
   }
 
-  .container > img {
-  width: 100%
+
+@media (min-width: 640px) {
+  .products {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 4;
   }
-
-
-
-
-
-/*första barn prioritering
-.container > :first-child {
-  border: 2px solid green;
-  grid-column: 1,3;
 }
 
-
-/* Layout med Flexbox
-
-.container {
-  display: flex;
-  gap: 10px;
-  flex-direction: row;
-}
-
-.container > div {
-  border: 2px solid red;
-  flex-grow: 1;
-  height: 200px;
-}
-
-.container > img {
-  width: 100%
-}
-   
-display: inline;
-
-slut*/
-
-
-
-   /* Medium devices (>=640px): 
-    @media (min-width: 640px) {
-        .image-grid {
-            grid-template-columns: repeat(2, 1fr);
-            grid-template-rows: repeat(2, 1fr);
-    }
+@media (min-width: 1024px) {
+  .products {
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 2;
   }
-
-        /*
-        grid-template-columns: repeat(4, 1fr);
-        grid-template-rows: repeat(2, 1fr);
-
-        /*
-    .popular-products {
-        display: grid;
-        background-color: gray;
-        gap: 10px;
-        padding: 10px;
-      }
-
-
-      display: grid;
-        grid-column-gap: 20px;
-        grid-row-gap: 20px;
-        grid-template-columns: repeat(4, 1fr);
-        grid-template-rows: repeat(2, 1fr);
-        }
-        */
+}
