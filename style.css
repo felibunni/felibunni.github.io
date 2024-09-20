@@ -2,43 +2,61 @@ body {
     background-image: url('/images/freakyfashion.png');
     background-attachment: fixed;
     background-color: white;
-    padding: 10px;
+    padding: 20px;
+  }
+    
+    .header {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
     }
 
+    .heart-basket {
+      display: flex;
+      gap: 20px;
+    }
+    
+    .heart-basket i {
+      font-size: 24px;
+      cursor: pointer; /* klickbara ikoner */
+    }
 
-  /* Sökfält, inte större än innehållet */
+    .search {
+      width: max-content; /*inte större än innehållet*/
+      display: flex;
+      padding: 10px;
+      border-radius: 25px;
+      outline: 1px solid #696969;  
+      background: #f6f6f6;
+      align-items: center;
+    }
+  
+    .search-input {
+      font-size: 16px;
+      font-family: century gothic;
+      color: #8f8f8f;
+      margin-left: 10px;
+      border:none;
+      outline: none;
+      background: transparent;
+    }
+  
+    .search-icon {
+      color: #8f8f8f;
+    }
 
-  .search {
-    width: max-content;
-    display: flex;
-    padding: 10px;
-    border-radius: 25px;
-    outline: 1px solid #696969;  
-    background: #f6f6f6;
-  }
-
-  .search-input {
-    font-size: 16px;
-    font-family: century gothic;
-    color: #8f8f8f;
-    margin-left: 10px;
-    border:none;
-    outline: none;
-    background: transparent;
-  }
-
-  .search-icon {
-    color: #8f8f8f;
-  }
-
-  /* Navigering */
-
-  .nav-list {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-  }
-
+    .search-nav {
+      display: flex;
+      align-items: center;
+    }
+    
+    .nav-list {
+      list-style: none;
+      margin-top: 10;
+      padding: 0;
+      gap: 20px;
+    }
+  
 /*Produktkort, över 640 px och över 1024 fungerar, men inte under 640 px*/
 
   .products {
