@@ -1,65 +1,83 @@
 body {
-    background-image: url('/images/freakyfashion.png');
-    background-attachment: fixed;
     background-color: white;
-    padding: 20px;
   }
-    
+
+main, footer {
+  border: 2px solid red;
+}
+
+img, .input, .search, .search-nav, nav {
+  max-width: 100%;
+}
+
+/* Header content */
+
+.search-nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;  /*kan behöva tas bort eller justeras med responsivitet*/
+}
+
+.search {
+  width: max-content;
+  display: flex;
+  padding: 10px;
+  border-radius: 25px;
+  outline: 1px solid #696969;  
+  background: #f6f6f6;
+  align-items: center;
+}
+
+.search-input {
+  font-size: 1em;
+  font-family: 'Courier New', Courier, monospace;
+  color: #8f8f8f;
+  margin-left: 20px;
+  border:none;
+  outline: none;
+  background: transparent;
+}
+
+.heart-basket {
+  width: max-content;
+  cursor: pointer; 
+}
+
+.nav {
+  padding: 2%;
+}
+
+.nav-list {
+  list-style: none;
+  padding: 0;
+  font-size: 1em;
+  font-family: garamond;
+  font-weight: bold;
+}
+
+/* Main  content */
+
+
+
+
+
+
+
+/* Failed responsiveness below /*  
+
+/*
+
+  @media (min-width: 640px) {
     .header {
       display: flex;
+      justify-content: start;
       flex-wrap: wrap;
-      align-items: center;
-    }
-
-    .heart-basket {
-      display: flex;
-      gap: 20px;
-    }
-    
-    .heart-basket i {
-      font-size: 24px;
-      cursor: pointer; /* klickbara ikoner */
-    }
-
-    .search {
-      width: max-content; /*inte större än innehållet*/
-      display: flex;
-      padding: 10px;
-      border-radius: 25px;
-      outline: 1px solid #696969;  
-      background: #f6f6f6;
-      align-items: center;
-    }
+      }
   
-    .search-input {
-      font-size: 16px;
-      font-family: century gothic;
-      color: #8f8f8f;
-      margin-left: 10px;
-      border:none;
-      outline: none;
-      background: transparent;
-    }
-  
-    .search-icon {
-      color: #8f8f8f;
-    }
-
-    .search-nav {
-      display: flex;
-      align-items: center;
-    }
-    
-    .nav-list {
-      list-style: none;
-      margin-top: 10;
-      padding: 0;
-      gap: 20px;
-    }
-  
-/*Produktkort, över 640 px och över 1024 fungerar, men inte under 640 px*/
+Produktkort, över 640 px och över 1024 fungerar, men inte under 640 px
 
   .products {
+  width: 100%;
   display: grid;
   gap: 10px;
   }
@@ -99,4 +117,5 @@ body {
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: 2;
   }
-}
+} /*
+    
