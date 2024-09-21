@@ -12,20 +12,16 @@ img, .input, .search, .search-nav, nav {
 
 /* Header content */
 
-header {
-  position: sticky;
-}
-
 .search-nav {
   display: flex;
   align-items: center;
-  justify-content: space-around;  /*kan behöva tas bort eller justeras med responsivitet*/
 }
 
 .search {
   width: max-content;
   display: flex;
   padding: 3px;
+  margin-right: 10px;
   border-radius: 25px;
   outline: 1px solid #696969;  
   background: #f6f6f6;
@@ -43,11 +39,18 @@ header {
 }
 
 .heart-basket {
-  cursor: pointer; 
+  width: max-content;
+  display: flex;
+  justify-content: space-between;
+  gap: 5px;
+}
+
+.h-heart, .h-basket {
+  min-width: 20px;
 }
 
 .nav {
-  padding: 1%;
+  margin-left: 1%;
 }
 
 .nav-list {
@@ -57,6 +60,22 @@ header {
   font-family: garamond, georgia, serif;
   font-weight: bold;
 }
+
+@media (min-width: 640px) {
+  .logo-search {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+  }
+}
+
+@media (min-width: 640px) {
+  .nav-list {
+    display: flex;
+    gap: 8%;
+  }
+}
+
 
 /* Main  content */
 
