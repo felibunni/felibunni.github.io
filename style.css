@@ -12,6 +12,10 @@ img, .input, .search, .search-nav, nav {
 
 /* Header content */
 
+header {
+  position: sticky;
+}
+
 .search-nav {
   display: flex;
   align-items: center;
@@ -21,7 +25,7 @@ img, .input, .search, .search-nav, nav {
 .search {
   width: max-content;
   display: flex;
-  padding: 10px;
+  padding: 3px;
   border-radius: 25px;
   outline: 1px solid #696969;  
   background: #f6f6f6;
@@ -39,27 +43,36 @@ img, .input, .search, .search-nav, nav {
 }
 
 .heart-basket {
-  width: max-content;
   cursor: pointer; 
 }
 
 .nav {
-  padding: 2%;
+  padding: 1%;
 }
 
 .nav-list {
   list-style: none;
   padding: 0;
   font-size: 1em;
-  font-family: garamond;
+  font-family: garamond, georgia, serif;
   font-weight: bold;
 }
 
 /* Main  content */
 
+.product-name {
+  display: flex;
+  justify-content: space-between;
+  font-family: 'century gothic', century;
+  font-weight: bold;
+  font-size: 1em;
+}
 
-
-
+.product-type {
+  font-family: garamond, georgia, serif;
+  font-size: 1em;
+  margin-top: 2%
+}
 
 
 
@@ -82,19 +95,20 @@ Produktkort, över 640 px och över 1024 fungerar, men inte under 640 px
   gap: 10px;
   }
 
-  .productname {
-    float: left;
-    font-size: 20px;
-    font-family: century gothic;
-    font-weight: bold;
-  }
+.productname {
+  float: left;
+  font-size: 1em;
+  font-family: 'century gothic', century;
+  font-weight: bold;
+}
 
-  .price {
-    float:right;
-    font-size: 20px;
-    font-family: century gothic;
-    font-weight: bold;
-  }
+.price {
+  float:right;
+  font-size: 1em;
+  font-family: 'century gothic', century;
+  font-weight: bold;
+}
+
 
   .products > img {
     width: 100%
