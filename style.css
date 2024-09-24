@@ -190,7 +190,7 @@ h1 {
 /* Footer content */
 
 footer {
-  border: 2px dashed #696969;
+  border: 2px dashed #aaaaaa;
   border-radius: 10px;
   background-color: #f4f4f4;
   font-size: 9px;
@@ -263,6 +263,18 @@ footer img {
     font-weight: normal;
   }
 }
+
+
+/* failed footer responsiveness
+
+footer > :first-child {
+  display: flex;
+  justify-content: space-around;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 10%;
+}
+  */
 
 
 /* 
