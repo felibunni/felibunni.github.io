@@ -250,6 +250,7 @@ footer {
   font-size: 9px;
   padding-top: 1%;
   margin-top: 2%;
+  margin-bottom: 4%;
 }
 
 footer img {
@@ -274,13 +275,13 @@ footer img {
   font-family: 'century gothic', century;
 }
 
-.footer-list {
+.list {
   font-family: garamond, georgia, serif;
   list-style: none;
-  padding: 1%;
+  padding-left: 2%;
 }
 
-.footer-text, .footer-list {
+.footer-text, .list {
   font-size: 1rem;
   font-weight: bold;
 }
@@ -288,7 +289,6 @@ footer img {
 .footer-nav {
   margin-top: 2%;
   padding-top: 2%;
-  padding-left: 1%;
 }
 
 .copyright {
@@ -297,7 +297,7 @@ footer img {
   text-align: center;
 }
 
-.footer-list li {
+.list li {
   margin-bottom: 3%;
 }
 
@@ -305,6 +305,13 @@ footer img {
 @media (min-width: 640px) {
   footer {
     background-color: #d8d8d8;
+    margin-bottom: 2%;
+  }
+}
+
+@media (min-width: 1024px) {
+  footer {
+    margin-bottom: 1%;
   }
 }
 
@@ -352,7 +359,7 @@ footer img {
 }
 
 @media (min-width: 640px) {
-  .footer-list {
+  .list {
     font-weight: normal;
   }
 }
@@ -374,6 +381,47 @@ footer img {
   }
 }
 
+/* Accordion for mobile only, hence max-width.
+Too much copy paste to know what to change using min-width */
+
+@media (max-width: 640px) { 
+  .accordion .content .footer-title {
+    position: relative;
+    padding: 1%;
+    background-color: white;
+    color: black;
+    cursor: pointer;
+  }
+  
+  .accordion .content.active .footer-title {
+    background-color: #b9e3e7;
+  }
+  
+  .accordion .content .footer-title::before {
+    content: '+';
+    position: absolute;
+    top: 50%;
+    right: 20px;
+    transform: translateY(-50%);
+    font-size: 1em;
+  }
+  
+  .accordion .content.active .footer-title::before {
+    content: '-';
+  }
+  
+  .accordion .content .list {
+    position: relative;
+    height: 0;
+    overflow: hidden;
+    transition: 0.5s;
+    overflow-y: auto;
+  }
+  
+  .accordion .content.active .list {
+  height: max-content;
+  }
+}
 
 /* 
 Produktkort, över 640 px och över 1024 fungerar, men inte under 640 px

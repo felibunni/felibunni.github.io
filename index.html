@@ -9,7 +9,7 @@
 </head>
 <body>
    
-<header class="header">
+<header>
 
     <div class="logo-search">
         <div>
@@ -89,12 +89,14 @@
             <span class="footer-text">Nyheter varje dag</span>
         </div> 
     </div>
+
+    <!-- My own footer before accordion fails -->
             
     <div class="footer-nav">
         <div class="accordion">
-            <div class="accordion-content">
+            <div class="content">
                 <div class="footer-title">Shopping</div>
-                <ul class="footer-list">
+                <ul class="list">
                      <li>Vinterjackor</li>
                      <li>Pufferjackor</li>
                      <li>Kappor</li>
@@ -102,28 +104,38 @@
                 </ul>
             </div>
 
-            <div class="accordion-content">
+            <div class="content">
                 <div class="footer-title">Mina Sidor</div>
-                <ul class="footer-list">
+                <ul class="list">
                     <li>Mina Ordrar</li>
                     <li>Mitt Konto</li>
                 </ul>
             </div>
 
-            <div class="accordion-content">
+            <div class="content">
                 <div class="footer-title">Kundtjänst</div>
-                <ul class="footer-list">
+                <ul class="list">
                     <li>Returnpolicy</li>
                     <li>Integritetspolicy</li>
                 </ul>
             </div>          
         </div>
-    
+
         <div class="copyright">
             <span>&copy;Freaky Fashion</span>
-        </div>    
+        </div>
     </div>
-    
+
+        <script>
+            const accordion = document.getElementsByClassName('content');
+
+            for (i = 0; i<accordion.length; i++ ){
+                accordion[i].addEventListener('click', function(){
+                    this.classList.toggle('active')
+                })
+            }
+        </script>  
 </footer>
+
 </body>
 </html>
