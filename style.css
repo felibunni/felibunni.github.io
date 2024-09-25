@@ -55,7 +55,7 @@ img, .input, .search, .search-nav, nav {
 }
 
 .h-heart, .h-basket {
-  min-width: 20px;
+  min-width: 24px;
 }
 
 .nav {
@@ -70,16 +70,39 @@ img, .input, .search, .search-nav, nav {
   font-weight: bold;
 }
 
+.categories {  /* Nav som syns i minst 1024px */
+  display: none;
+}
+
 .search-nav {
   display: flex;
   justify-content: center;
 }
 
+.h-heart img, .h-basket img {
+  width: 20px;
+}
+
 @media (min-width: 640px) {
   .logo-search {
     display: flex;
-    justify-content: space-between;
     width: 100%;
+  }
+}
+
+@media (min-width: 640px) { /* To move search bar and icons */
+  .search-nav {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 1fr;
+    width: 100%;
+  }
+}
+
+@media (min-width: 640px) { /* To move icons to the right */
+  .heart-basket  {
+    justify-self: end;
+    gap: 15px;
   }
 }
 
@@ -87,6 +110,18 @@ img, .input, .search, .search-nav, nav {
   .nav-list {
     display: flex;
     gap: 8%;
+  }
+}
+
+@media (min-width: 1024px) {  /* Extra navigering i header */
+  .categories {
+    display: inline;
+  }
+}
+
+@media (min-width: 1024px) {  
+  .nav {
+    width: 65%;
   }
 }
 
@@ -105,7 +140,7 @@ img, .input, .search, .search-nav, nav {
 
 h1 {
   font-family: garamond, georgia, serif;
-  font-size: 1,5em;
+  font-size: 1em;
   text-align: center;
   font-weight: bold;
   text-transform: uppercase;
@@ -256,7 +291,7 @@ footer img {
   footer > :first-child { /* 1:a el i footer, om el läggs till bör detta ändras */
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: 1fr, 1fr;
+    grid-template-rows: repeat(2, 1fr);
     padding: 4%;
     justify-content: center;
     text-align: center;
@@ -302,7 +337,7 @@ footer img {
 }
 
 @media (min-width: 640px) {  /* Shopping, Mina Sidor, Kundtjänst */
-  footer nav {
+  .accordion {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: 1fr;
@@ -312,7 +347,7 @@ footer img {
 }
 
 @media (min-width: 1024px) {  /* Shopping, Mina Sidor, Kundtjänst */
-  footer nav {
+  .accordion {
     width: 50%;
   }
 }
