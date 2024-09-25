@@ -24,6 +24,7 @@ img, .input, .search, .search-nav, nav {
 .search-nav {
   display: flex;
   align-items: center;
+  justify-content: center;
 }
 
 .search {
@@ -70,13 +71,8 @@ img, .input, .search, .search-nav, nav {
   font-weight: bold;
 }
 
-.categories {  /* Nav som syns i minst 1024px */
+.categories {  /* Nav visible minimum 1024px */
   display: none;
-}
-
-.search-nav {
-  display: flex;
-  justify-content: center;
 }
 
 .h-heart img, .h-basket img {
@@ -96,6 +92,7 @@ img, .input, .search, .search-nav, nav {
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: 1fr;
     width: 100%;
+    
   }
 }
 
@@ -113,7 +110,13 @@ img, .input, .search, .search-nav, nav {
   }
 }
 
-@media (min-width: 1024px) {  /* Extra navigering i header */
+@media (min-width: 1024px) {  /* Search bar slightly to the right */
+  .search {
+    margin-left: 10%;
+  }
+}
+
+@media (min-width: 1024px) {  /* Extra header navigation */
   .categories {
     display: inline;
   }
@@ -136,11 +139,13 @@ img, .input, .search, .search-nav, nav {
   background-color: #f6f6f6;
   padding-top: 1px;
   margin-bottom: 5%;
+  padding: 1%;
+  font-size: 18px;  /* Changing default font-size */
 }
 
 h1 {
   font-family: garamond, georgia, serif;
-  font-size: 1em;
+  font-size: 2em;
   text-align: center;
   font-weight: bold;
   text-transform: uppercase;
@@ -157,7 +162,7 @@ h1 {
     display: block;
     margin-left: auto;
     margin-right: auto;
-    width: 50%;
+    width: 94%;
   }
 }
 
@@ -173,9 +178,21 @@ h1 {
   }
 }
 
+@media (min-width: 640px) {
+  h1 {
+    font-size: 24px;
+  }
+}
+
 @media (min-width: 1024px) {
   h1 {
     font-size: 30px;
+  }
+}
+
+@media (min-width: 640px) {
+  .text {
+    font-size: 17px;
   }
 }
 
@@ -208,7 +225,7 @@ h1 {
 
 
 
-/* Produktkort */
+/* Product card */
 
 .product-name {
   display: flex;
@@ -288,7 +305,7 @@ footer img {
 }
 
 @media (min-width: 640px) {
-  footer > :first-child { /* 1:a el i footer, om el läggs till bör detta ändras */
+  footer > :first-child { /* 1st el in footer, if el is added change this */
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(2, 1fr);
@@ -300,7 +317,7 @@ footer img {
 }
 
 @media (min-width: 1024px) {
-  footer > :first-child { /* 1:a el i footer, om el läggs till bör detta ändras */
+  footer > :first-child { /* 1st el in footer, if el is added change this */
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -336,7 +353,8 @@ footer img {
   }
 }
 
-@media (min-width: 640px) {  /* Shopping, Mina Sidor, Kundtjänst */
+
+@media (min-width: 640px) {  /* Only accordion on mobile, make visible */
   .accordion {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -346,7 +364,7 @@ footer img {
   }
 }
 
-@media (min-width: 1024px) {  /* Shopping, Mina Sidor, Kundtjänst */
+@media (min-width: 1024px) { /* Only accordion on mobile, make visible */
   .accordion {
     width: 50%;
   }
