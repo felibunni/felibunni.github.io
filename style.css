@@ -140,7 +140,7 @@ img, .input, .search, .search-nav, nav {
   padding-top: 1px;
   margin-bottom: 5%;
   padding: 1%;
-  font-size: 18px;  /* Changing default font-size */
+  font-size: 17px;  /* Changing default font-size for parent, standard is 16px */
 }
 
 h1 {
@@ -180,13 +180,13 @@ h1 {
 
 @media (min-width: 640px) {
   h1 {
-    font-size: 24px;
+    font-size: 31px;
   }
 }
 
 @media (min-width: 1024px) {
   h1 {
-    font-size: 30px;
+    font-size: 32px;
   }
 }
 
@@ -223,7 +223,37 @@ h1 {
 
 /* Spots */
 
+.spots {
+  display: none;
+}
 
+@media (min-width: 1024px) {
+  .spots {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 1fr;
+    justify-items: center;
+    gap: 20px;
+  }
+  
+  .spotscontainer {
+    position: relative;
+    display: block;
+    width: 100%;
+  }
+  
+  .spot-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    font-family: garamond, georgia, serif;
+    font-size: 3rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: black;
+  }
+}
 
 /* Product card */
 
@@ -365,7 +395,7 @@ footer img {
 }
 
 
-@media (min-width: 640px) {  /* Only accordion on mobile, make visible */
+@media (min-width: 640px) {  /* Only an actual accordion on mobile, ignore the name */
   .accordion {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -375,7 +405,7 @@ footer img {
   }
 }
 
-@media (min-width: 1024px) { /* Only accordion on mobile, make visible */
+@media (min-width: 1024px) { /* Only an actual accordion on mobile, ignore the name */
   .accordion {
     width: 50%;
   }
