@@ -21,6 +21,10 @@ img, .input, .search, .search-nav, nav {
 
 /* Header content */
 
+header {
+  font-size: 18px;
+}
+
 .search-nav {
   display: flex;
   align-items: center;
@@ -86,6 +90,12 @@ img, .input, .search, .search-nav, nav {
   }
 }
 
+@media (min-width: 640px) {
+  .search-input {
+    font-size: 1rem;
+  }
+}
+
 @media (min-width: 640px) { /* To move search bar and icons */
   .search-nav {
     display: grid;
@@ -106,6 +116,7 @@ img, .input, .search, .search-nav, nav {
 @media (min-width: 640px) {
   .nav-list {
     display: flex;
+    font-size: 1rem;
     gap: 8%;
   }
 }
