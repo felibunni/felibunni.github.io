@@ -320,7 +320,7 @@ margin-bottom: 5%;
 .product-name {
   display: flex;
   justify-content: space-between;
-  font-family: 'century gothic', century, 'futura font', 'avant garde gothic', ;
+  font-family: 'century gothic', century, 'futura font', 'avant garde gothic', 'trebutchet MS', sans-serif;
   font-weight: bold;
   font-size: 1rem;
 }
