@@ -581,50 +581,81 @@ Too much copy paste to know what to change using min-width */
   }
 }
 
-/* 
-Produktkort, över 640 px och över 1024 fungerar, men inte under 640 px
+/* Product-details.html */
 
-  .products {
+.h1-details {
+  font-family: garamond, georgia, serif;
+  font-size: 2em;
+  text-align: left;
+  font-weight: bold;
+  text-transform: none;
+  padding-left: 3%;
+}
+
+.similar-container {
+  display: none;
+}
+
+.h2-details {
+  font-family: garamond, georgia, serif;
+  font-size: 28px;
+  text-align: center;
+  font-weight: bold;
+  text-transform: none;
+}
+
+.similar-products {
+  margin: 1%;
+  margin-top: 4%;
+  margin-bottom: 4%;
+  font-size: 18px;
+  text-align: center; /* center content vertically without flex */
+}
+
+.product-2 {  /* Products section */
+  margin-bottom: 5%;
+}
+
+.product-2 img {
   width: 100%;
-  display: grid;
-  gap: 10px;
-  }
-
-.productname {
-  float: left;
-  font-size: 1em;
-  font-family: 'century gothic', century;
-  font-weight: bold;
+  display: block;
 }
 
-.price {
-  float:right;
-  font-size: 1em;
-  font-family: 'century gothic', century;
-  font-weight: bold;
+@media (min-width: 640px) { 
+  .similar-container {
+    display: block;
+  }
 }
 
 
-  .products > img {
-    width: 100%
-  }  
-
-  .products > div {
-  border: 2px solid red;
+@media (min-width: 1024px) { 
+  .h2-details {
+    font-size: 30px;
   }
-
+}
 
 @media (min-width: 640px) {
-  .products {
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 4;
+  .emptyheart {
+    display: none;
+  }
+}
+
+@media (min-width: 640px) {
+  .similar-products {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 1fr;
+    grid-column-gap: 20px;
+    grid-row-gap: 20px;
+    font-size: 13px;
   }
 }
 
 @media (min-width: 1024px) {
-  .products {
-    grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: 2;
+  .similar-products {
+    grid-column-gap: 10px;
+    grid-row-gap: 10px;
+    font-size: 15px;
   }
-} /*
-    
+}
+
