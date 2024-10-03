@@ -278,7 +278,8 @@ h1 {
 }
 
 .product {  /* Single product */
-margin-bottom: 5%;
+  margin-bottom: 5%;
+  max-width: 500px;
 }
 
 @media (min-width: 640px) {
@@ -298,10 +299,9 @@ margin-bottom: 5%;
     grid-template-rows: repeat(2, 1fr);
     grid-column-gap: 10px;
     grid-row-gap: 10px;
-    font-size: 15px;
+    font-size: 0.9rem;
   }
 }
-
 
 /* Product card overlays */
 
@@ -583,14 +583,106 @@ Too much copy paste to know what to change using min-width */
 
 /* Product-details.html */
 
+/* Product details */
+
+.pd-description {
+  padding: 2%;
+  text-align: left;
+}
+
 .h1-details {
   font-family: garamond, georgia, serif;
   font-size: 2em;
   text-align: left;
   font-weight: bold;
   text-transform: none;
-  padding-left: 3%;
 }
+
+.price {
+  font-family: garamond, georgia, serif;
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+.add-to-cart {
+  position: relative; /* For animation */
+  cursor: pointer;
+  width: 100%;
+  margin-top: 4%;
+  font-family: sans-serif, 'Segoe UI', Tahoma, Verdana;
+  font-size: 1rem;
+  font-weight: bold;
+  border-radius: 10px;
+  padding: 10px;
+  z-index: 1;
+  transition: color 300ms ease-in-out; /* -- To make the color slowly disappear */
+}
+
+.add-to-cart::before {
+  content: ''; /* Empty string to make sure animation shows */
+  position: absolute;
+  background-color: #d7c1fa;
+  border-radius: 10px;
+  z-index: -1; /* Puts background behind button */
+  top: 0;
+  left: 0;
+  bottom: 0;   /* To cover entire width/height */
+  right: 0;
+
+  transform: scaleX(0); /* Changes width to 0 to hide color*/
+  transform-origin: left;
+  transition: transform 300ms ease-in-out;
+}
+
+.add-to-cart:hover::before, .add-to-cart:focus::before { /* Focus to make smoother effect */
+  transform: scaleX(1);
+}
+
+.add-to-cart:hover, .add-to-cart:focus { /* Relating to -- above */
+  color: #513187; /* Changes button color when hovering */
+}
+
+@media (min-width: 640px) {
+  .add-to-cart{
+    width: max-content;
+  }
+}
+
+.product-details p {
+  font-family: 'Courier New', Courier, monospace;
+}
+
+.pd-img {
+  width: 100%;
+}
+
+.product-details { /* The whole container */
+  max-width: 100%;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin: 1%;
+  margin-top: 2%;
+  margin-bottom: 2%;
+}
+
+@media (min-width: 640px) {
+  .product-details {
+    display: flex;
+    padding: 2%;
+    margin-right: 2%;
+    font-size: 0.9rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .product-details {
+    max-width: 75%;
+  }
+}
+
+/* Similar products */
 
 .similar-container {
   display: none;
@@ -614,6 +706,7 @@ Too much copy paste to know what to change using min-width */
 
 .product-2 {  /* Products section */
   margin-bottom: 5%;
+  max-width: 500px;
 }
 
 .product-2 img {
@@ -655,7 +748,7 @@ Too much copy paste to know what to change using min-width */
   .similar-products {
     grid-column-gap: 10px;
     grid-row-gap: 10px;
-    font-size: 15px;
+    font-size: 0.9rem;
   }
 }
 
