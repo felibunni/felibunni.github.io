@@ -604,8 +604,8 @@ Too much copy paste to know what to change using min-width */
 }
 
 .pd-img {
-  width: max-content;
-  flex-shrink: 0; /* To prevent flex item from shrinking too much */
+  position: relative;
+  display: inline-block;
 }
 
 .pd-description {
@@ -668,6 +668,14 @@ Too much copy paste to know what to change using min-width */
   color: #245c29; /* Changes button color when hovering */
 }
 
+#emptyheart {
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  min-width: 29px;
+  cursor: pointer;
+}
+
 @media (min-width: 640px) {
   .product-details {
     display: flex;
@@ -686,7 +694,7 @@ Too much copy paste to know what to change using min-width */
 
 @media (min-width: 640px) {
   .pd-img {
-    flex-shrink: 0.4;
+    flex-shrink: 0.7; /* To prevent flex item from shrinking too much */
   }
 }
 
@@ -707,6 +715,11 @@ Too much copy paste to know what to change using min-width */
 @media (min-width: 640px) {
   .add-to-cart{
     width: max-content;
+  }
+}
+@media (min-width: 640px) {
+  #emptyheart {
+    display: none;
   }
 }
 
