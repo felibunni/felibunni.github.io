@@ -822,16 +822,10 @@ Too much copy paste to know what to change using min-width */
   padding-left: 1%;
 }
 
-/* index.html */
-
 .admin-layout {
   display: grid;
   grid-template-columns: 150px 1fr;
   grid-template-rows: 1fr;
-}
-
-.products-container {
-  margin-right: 2%;
 }
 
 .sidebar {
@@ -846,6 +840,12 @@ Too much copy paste to know what to change using min-width */
   font-family: 'Segoe UI', Tahoma, Verdana, sans-serif;
   font-weight: bold;
   font-size: 17px;
+}
+
+/* index.html */
+
+.products-container {
+  margin-right: 2%;
 }
 
 .table-header {
