@@ -380,6 +380,17 @@ header {
   text-align: left;
 }
 
+.footer-info {
+  margin: 1%;
+  margin-top: 1%;
+  padding-left: 7px;
+}
+
+.footer-info img {
+  min-width: 32px;
+  padding-right: 1%;
+}
+
 @media (min-width: 640px) {
   .product-type {
     font-size: 1rem;
@@ -392,6 +403,38 @@ header {
   }
 }
 
+@media (min-width: 640px) {
+  .footer-info {
+    padding-left: none;
+    margin: none;
+    margin-top: none;
+    justify-items: center;
+  }
+}
+
+@media (min-width: 640px) {
+  .footer-info {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    padding: 4%;
+    justify-content: center;
+    text-align: center;
+    gap: 20%;
+  }
+}
+
+@media (min-width: 1024px) {
+  .footer-info {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 2%;
+  padding-left: 5%;
+  gap: 0;
+  }
+}
+
 /* Footer content */
 
 .footer {
@@ -399,20 +442,13 @@ header {
   border-radius: 10px;
   background-color: #f4f4f4;
   font-size: 9px;
-  padding-top: 2%;
   margin-top: 10%;
   margin-bottom: 4%;
 }
 
-.footer-info {
-  margin: 1%;
-  margin-top: 1%;
-  padding-left: 7px;
-}
-
-footer img {
-  min-width: 32px;
-  padding-right: 1%;
+.footer-nav {
+  padding-top: 3%;
+  padding-bottom: 1%;
 }
 
 .info {
@@ -445,11 +481,6 @@ footer img {
   font-weight: bold;
 }
 
-.footer-nav {
-  margin-top: 2%;
-  padding-top: 2%;
-}
-
 .copyright {
   font-family: garamond, georgia, serif;
   font-size: 1rem;
@@ -460,58 +491,24 @@ footer img {
   margin-bottom: 3%;
 }
 
-
 @media (min-width: 640px) {
   .footer {
     background-color: #d8d8d8;
     margin-bottom: 2%;
-    margin-top: 8%;
+    margin-top: 0;
   }
 }
 
 @media (min-width: 1024px) {
   .footer {
     margin-bottom: 2%;
-    margin-top: 6%;
-  }
-}
-
-@media (min-width: 640px) {
-  .footer-info {
-    padding-left: none;
-    margin: none;
-    margin-top: none;
-    justify-items: center;
-  }
-}
-
-@media (min-width: 640px) {
-  .footer-info { /* 1st el in footer, if el is added change this */
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(2, 1fr);
-    padding: 4%;
-    justify-content: center;
-    text-align: center;
-    gap: 20%;
-  }
-}
-
-@media (min-width: 1024px) {
-  .footer-info { /* 1st el in footer, if el is added change this */
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  padding: 2%;
-  padding-left: 5%;
-  gap: 0;
+    margin-top: 0;
   }
 }
 
 @media (min-width: 640px) {
   .footer-nav {
     border: 2px solid #696969;
-    padding-top: 2%;
     padding-left: 2%;
   }
 }
@@ -533,7 +530,6 @@ footer img {
     font-weight: normal;
   }
 }
-
 
 @media (min-width: 640px) {  /* Only an actual accordion on mobile, ignore the name */
   .accordion {
