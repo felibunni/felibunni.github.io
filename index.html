@@ -10,249 +10,254 @@
 <body>
    
 <header>
-    <div class="logo-search">
-        <div>
-            <img src="/images/Logga.png" alt="Logotyp">
+    <div class="header">
+        <div class="logo-search">
+            <div>
+                <img src="/images/Logga.png" alt="Logotyp">
+            </div>
+        
+            <div class="search-nav">
+                <div class="search">
+                    <span class="search-icon material-symbols-outlined">search</span>
+                    <input class="search-input" placeholder="Sök produkt">
+                </div>
+                <div class="heart-basket">
+                    <div class="h-heart">
+                        <a href="#"><img src="/svg/heartfull.svg" alt="heart fill"></a>
+                    </div>
+                    <div class ="h-basket">
+                        <a href="checkout.html"><img src="/svg/basketfull.svg" alt="basket fill"></a>
+                    </div>
+                </div>
+            </div>
         </div>
     
-        <div class="search-nav">
-            <div class="search">
-                <span class="search-icon material-symbols-outlined">search</span>
-                <input class="search-input" placeholder="Sök produkt">
-            </div>
-            <div class="heart-basket">
-                <div class="h-heart">
-                    <a href="#"><img src="/svg/heartfull.svg" alt="heart fill"></a>
-                </div>
-                <div class ="h-basket">
-                    <a href="checkout.html"><img src="/svg/basketfull.svg" alt="basket fill"></a>
-                </div>
-            </div>
+        <div class="nav">
+            <nav>
+                <ul class="nav-list">
+                    <li>Nyheter</li>
+                    <li class="categories">Kategorier</li>
+                    <li>Topplistan</li>
+                    <li>Rea</li>
+                    <li>Kampanjer</li>
+                </ul>
+            </nav> 
         </div>
-    </div>
-
-    <div class="nav">
-        <nav>
-            <ul class="nav-list">
-                <li>Nyheter</li>
-                <li class="categories">Kategorier</li>
-                <li>Topplistan</li>
-                <li>Rea</li>
-                <li>Kampanjer</li>
-            </ul>
-        </nav> 
     </div>
 </header>
 
 <main>
-    <section class="hero">
-        <div class="hero-image-background">
-            <img id="hero" src="/images/fashionphoto.png" alt="Hero">
-        </div>
-        <div class="hero-text">
-            <h1>Mode är vår passion</h1>
-            <p class="text">Skillnaden mellan stil och mode är kvalitet. Mode är något som kommer inifrån dig själv. Om du är självsäker kan du få vad som helst att se bra ut! Shoppa vår kollektion nu.</p>
-        </div>
-    </section>
-
-    <section class="spots">
-        <a href="#">
-            <div class="spotscontainer">
-                <img src="images/spot1.png" alt="Model">
-                <div class="spot-text">Kvalitet</div>
+    <div class="main">
+        <section class="hero">
+            <div class="hero-image-background">
+                <img id="hero" src="/images/fashionphoto.png" alt="Hero">
             </div>
-        </a>
-        <a href="#">
-            <div class="spotscontainer">
-                <img src="images/spot2.png" alt="Model">
-                <div class="spot-text">Karaktär</div>
+            <div class="hero-text">
+                <h1>Mode är vår passion</h1>
+                <p class="text">Skillnaden mellan stil och mode är kvalitet. Mode är något som kommer inifrån dig själv. Om du är självsäker kan du få vad som helst att se bra ut! Shoppa vår kollektion nu.</p>
             </div>
-        </a>
-        <a href="#">
-            <div class="spotscontainer">
-                <img src="images/spot3.png" alt="Model">
-                <div class="spot-text">Komfort</div>
+        </section>
+    
+        <section class="spots">
+            <a href="#">
+                <div class="spotscontainer">
+                    <img src="images/spot1.png" alt="Model">
+                    <div class="spot-text">Kvalitet</div>
+                </div>
+            </a>
+            <a href="#">
+                <div class="spotscontainer">
+                    <img src="images/spot2.png" alt="Model">
+                    <div class="spot-text">Karaktär</div>
+                </div>
+            </a>
+            <a href="#">
+                <div class="spotscontainer">
+                    <img src="images/spot3.png" alt="Model">
+                    <div class="spot-text">Komfort</div>
+                </div>
+            </a>
+        </section>
+    
+        <section class="products">
+            <div class="product"> <!-- Produkt 1 -->
+                <div class="product-image">
+                    <a href="product-details.html"><img src="/images/produkt1.png" alt="Tröja i Mohairmix"></a>
+                    <span class="new">Nyhet!</span>
+                    <span class="heartfull"><img src="/svg/heartfull.svg" alt="Hjärta"></span>
+                </div>
+                    
+                <div class="product-name">
+                    <span>Tröja i Mohairmix</span>
+                    <span>599 SEK</span>
+                </div>
+                <div class="product-type"> Premium</div>        
             </div>
-        </a>
-    </section>
-
-    <section class="products">
-        <div class="product"> <!-- Produkt 1 -->
-            <div class="product-image">
-                <a href="product-details.html"><img src="/images/produkt1.png" alt="Tröja i Mohairmix"></a>
-                <span class="new">Nyhet!</span>
-                <span class="heartfull"><img src="/svg/heartfull.svg" alt="Hjärta"></span>
+    
+            <div class="product"> <!-- Produkt 2 -->
+                <div class="product-image">
+                    <a href="product-details.html"><img src="/images/produkt2.png" alt="T-shirt med Pärlor"></a>
+                    <span class="heartempty"><img src="/svg/heartempty.svg" alt="Hjärta"></span>
+                </div>
+    
+                <div class="product-name">
+                    <span>T-shirt med Pärlor</span>
+                    <span>499 SEK</span>
+                </div>
+                <div class="product-type"> Premium</div>
             </div>
+            
+            <div class="product"> <!-- Produkt 3 -->
+                <div class="product-image">
+                    <a href="product-details.html"><img src="/images/produkt3.png" alt="Tröja med Polo"></a>
+                    <span class="heartempty"><img src="/svg/heartempty.svg" alt="Hjärta"></span>
+                </div>
+    
+                <div class="product-name">
+                    <span>Tröja med Polo</span>
+                    <span>449 SEK</span>
+                </div>
+                <div class="product-type"> Premium</div>
+            </div>
+    
+            <div class="product"> <!-- Produkt 4 -->
+                <div class="product-image">
+                    <a href="product-details.html"><img src="/images/produkt4.png" alt="Vit T-shirt"></a>
+                    <span class="heartempty"><img src="/svg/heartempty.svg" alt="Hjärta"></span>
+                </div>
                 
-            <div class="product-name">
-                <span>Tröja i Mohairmix</span>
-                <span>599 SEK</span>
+                <div class="product-name">
+                    <span>Vit T-shirt</span>
+                    <span>499 SEK</span>
+                </div>
+                <div class="product-type"> Premium</div>
             </div>
-            <div class="product-type"> Premium</div>        
-        </div>
-
-        <div class="product"> <!-- Produkt 2 -->
-            <div class="product-image">
-                <a href="product-details.html"><img src="/images/produkt2.png" alt="T-shirt med Pärlor"></a>
-                <span class="heartempty"><img src="/svg/heartempty.svg" alt="Hjärta"></span>
+    
+    
+            <div class="product"> <!-- Produkt 5 -->
+                <div class="product-image">
+                    <a href="product-details.html"><img src="/images/produkt5.png" alt="Dekorativ T-shirt"></a>
+                    <span class="heartempty"><img src="/svg/heartempty.svg" alt="Hjärta"></span>
+                    <span class="heartfull-2"><img src="/svg/heartfull.svg" alt="Hjärta"></span>
+                </div>
+                
+                <div class="product-name">
+                    <span>Dekorativ T-shirt</span>
+                    <span>449 SEK</span>
+                </div>
+                <div class="product-type"> Premium</div>
             </div>
-
-            <div class="product-name">
-                <span>T-shirt med Pärlor</span>
-                <span>499 SEK</span>
+    
+    
+            <div class="product"> <!-- Produkt 6 -->
+                <div class="product-image">
+                    <a href="product-details.html"><img src="/images/produkt6.png" alt="Oversized T-shirt"></a>
+                    <span class="heartempty"><img src="/svg/heartempty.svg" alt="Hjärta"></span>
+                </div>
+                
+                <div class="product-name">
+                    <span>Oversized T-shirt</span>
+                    <span>579 SEK</span>
+                </div>
+                <div class="product-type"> Premium</div>
             </div>
-            <div class="product-type"> Premium</div>
-        </div>
-        
-        <div class="product"> <!-- Produkt 3 -->
-            <div class="product-image">
-                <a href="product-details.html"><img src="/images/produkt3.png" alt="Tröja med Polo"></a>
-                <span class="heartempty"><img src="/svg/heartempty.svg" alt="Hjärta"></span>
+    
+    
+            <div class="product"> <!-- Produkt 7 -->
+                <div class="product-image">
+                    <a href="product-details.html"><img src="/images/produkt7.png" alt="Finstickad Pikétröja"></a>
+                    <span class="heartempty"><img src="/svg/heartempty.svg" alt="Hjärta"></span>
+                </div>
+                
+                <div class="product-name">
+                    <span>Finstickad Pikétröja</span>
+                    <span>599 SEK</span>
+                </div>
+                <div class="product-type"> Premium</div>
             </div>
-
-            <div class="product-name">
-                <span>Tröja med Polo</span>
-                <span>449 SEK</span>
+    
+    
+            <div class="product"> <!-- Produkt 8 -->
+                <div class="product-image">
+                    <a href="product-details.html"><img src="/images/produkt8.png" alt="Ribbad Topp"></a>
+                    <span class="heartempty"><img src="/svg/heartempty.svg" alt="Hjärta"></span>
+                </div>
+                
+                <div class="product-name">
+                    <span>Ribbad Topp</span>
+                    <span>449 SEK</span>
+                </div>
+                <div class="product-type"> Premium</div>
             </div>
-            <div class="product-type"> Premium</div>
-        </div>
-
-        <div class="product"> <!-- Produkt 4 -->
-            <div class="product-image">
-                <a href="product-details.html"><img src="/images/produkt4.png" alt="Vit T-shirt"></a>
-                <span class="heartempty"><img src="/svg/heartempty.svg" alt="Hjärta"></span>
-            </div>
-            
-            <div class="product-name">
-                <span>Vit T-shirt</span>
-                <span>499 SEK</span>
-            </div>
-            <div class="product-type"> Premium</div>
-        </div>
-
-
-        <div class="product"> <!-- Produkt 5 -->
-            <div class="product-image">
-                <a href="product-details.html"><img src="/images/produkt5.png" alt="Dekorativ T-shirt"></a>
-                <span class="heartempty"><img src="/svg/heartempty.svg" alt="Hjärta"></span>
-                <span class="heartfull-2"><img src="/svg/heartfull.svg" alt="Hjärta"></span>
-            </div>
-            
-            <div class="product-name">
-                <span>Dekorativ T-shirt</span>
-                <span>449 SEK</span>
-            </div>
-            <div class="product-type"> Premium</div>
-        </div>
-
-
-        <div class="product"> <!-- Produkt 6 -->
-            <div class="product-image">
-                <a href="product-details.html"><img src="/images/produkt6.png" alt="Oversized T-shirt"></a>
-                <span class="heartempty"><img src="/svg/heartempty.svg" alt="Hjärta"></span>
-            </div>
-            
-            <div class="product-name">
-                <span>Oversized T-shirt</span>
-                <span>579 SEK</span>
-            </div>
-            <div class="product-type"> Premium</div>
-        </div>
-
-
-        <div class="product"> <!-- Produkt 7 -->
-            <div class="product-image">
-                <a href="product-details.html"><img src="/images/produkt7.png" alt="Finstickad Pikétröja"></a>
-                <span class="heartempty"><img src="/svg/heartempty.svg" alt="Hjärta"></span>
-            </div>
-            
-            <div class="product-name">
-                <span>Finstickad Pikétröja</span>
-                <span>599 SEK</span>
-            </div>
-            <div class="product-type"> Premium</div>
-        </div>
-
-
-        <div class="product"> <!-- Produkt 8 -->
-            <div class="product-image">
-                <a href="product-details.html"><img src="/images/produkt8.png" alt="Ribbad Topp"></a>
-                <span class="heartempty"><img src="/svg/heartempty.svg" alt="Hjärta"></span>
-            </div>
-            
-            <div class="product-name">
-                <span>Ribbad Topp</span>
-                <span>449 SEK</span>
-            </div>
-            <div class="product-type"> Premium</div>
-        </div>
-    </section> 
+        </section> 
+    </div>
 </main>
 
 <footer>
-    <div class="footer-info">
-        <div class="info">
-            <span><img src="/svg/globe.svg" alt="globe"></span>
-            <span class="footer-text">Gratis frakt och returer</span>
-        </div>
-        <div class="info">
-            <span><img src="/svg/airplane.svg" alt="airplane"></span>
-            <span class="footer-text">Expressfrakt</span>
-        </div>
-        <div class="info">
-            <span><img src="/svg/shield.svg" alt="shield"></span>
-            <span class="footer-text">Säkra betalningar</span>
-        </div>
-        <div class="info">
-            <span><img src="/svg/smile.svg" alt="smile"></span>
-            <span class="footer-text">Nyheter varje dag</span>
-        </div> 
-    </div>
-            
-    <div class="footer-nav">
-        <div class="accordion">
-            <div class="content">
-                <div class="footer-title">Shopping</div>
-                <ul class="list">
-                     <li>Vinterjackor</li>
-                     <li>Pufferjackor</li>
-                     <li>Kappor</li>
-                     <li>Trenchcoats</li>
-                </ul>
+    <div class="footer">
+        <div class="footer-info">
+            <div class="info">
+                <span><img src="/svg/globe.svg" alt="globe"></span>
+                <span class="footer-text">Gratis frakt och returer</span>
             </div>
-
-            <div class="content">
-                <div class="footer-title">Mina Sidor</div>
-                <ul class="list">
-                    <li>Mina Ordrar</li>
-                    <li>Mitt Konto</li>
-                </ul>
+            <div class="info">
+                <span><img src="/svg/airplane.svg" alt="airplane"></span>
+                <span class="footer-text">Expressfrakt</span>
             </div>
-
-            <div class="content">
-                <div class="footer-title">Kundtjänst</div>
-                <ul class="list">
-                    <li>Returnpolicy</li>
-                    <li>Integritetspolicy</li>
-                </ul>
-            </div>          
+            <div class="info">
+                <span><img src="/svg/shield.svg" alt="shield"></span>
+                <span class="footer-text">Säkra betalningar</span>
+            </div>
+            <div class="info">
+                <span><img src="/svg/smile.svg" alt="smile"></span>
+                <span class="footer-text">Nyheter varje dag</span>
+            </div> 
         </div>
-
-        <div class="copyright">
-            <span>&copy;Freaky Fashion</span>
+                
+        <div class="footer-nav">
+            <div class="accordion">
+                <div class="content">
+                    <div class="footer-title">Shopping</div>
+                    <ul class="list">
+                         <li>Vinterjackor</li>
+                         <li>Pufferjackor</li>
+                         <li>Kappor</li>
+                         <li>Trenchcoats</li>
+                    </ul>
+                </div>
+    
+                <div class="content">
+                    <div class="footer-title">Mina Sidor</div>
+                    <ul class="list">
+                        <li>Mina Ordrar</li>
+                        <li>Mitt Konto</li>
+                    </ul>
+                </div>
+    
+                <div class="content">
+                    <div class="footer-title">Kundtjänst</div>
+                    <ul class="list">
+                        <li>Returnpolicy</li>
+                        <li>Integritetspolicy</li>
+                    </ul>
+                </div>          
+            </div>
+    
+            <div class="copyright">
+                <span>&copy;Freaky Fashion</span>
+            </div>
         </div>
+    
+            <script>
+                const accordion = document.getElementsByClassName('content');
+    
+                for (i = 0; i<accordion.length; i++ ){
+                    accordion[i].addEventListener('click', function(){
+                        this.classList.toggle('active')
+                    })
+                }
+            </script>
     </div>
-
-        <script>
-            const accordion = document.getElementsByClassName('content');
-
-            for (i = 0; i<accordion.length; i++ ){
-                accordion[i].addEventListener('click', function(){
-                    this.classList.toggle('active')
-                })
-            }
-        </script>
 </footer>
-
 </body>
 </html>

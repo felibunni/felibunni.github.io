@@ -4,13 +4,63 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Administration</title>
-
+    <link rel="stylesheet" href="../../style.css"> <!-- style.css is outside of the directory -->
 </head>
-<body>
-
+<body class="admin">
     <header>
-        <h1>Administration</h1>
+        <div class="admin-header">
+            <h1>Administration</h1>
+        </div>
     </header>
+
+<main>
+    <div class="admin-layout">
+        <aside class="sidebar">
+            <div>Produkter</div>
+        </aside>
     
+        <div class="grid-container">    
+            <div class="table-header">
+                <span>Produkter</span>
+                <a href="new.html"><button class="btn-new-product">Ny produkt</button></a>
+            </div>
+        
+            <div class="table-container">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Namn</th>
+                            <th>SKU</th>
+                            <th>Pris</th>
+                            <th></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Svart T-Shirt</td>
+                            <td>AAA111</td>
+                            <td>199</td>
+                            <td>
+                                <a href="#"><span class="edit-icon">✏️</span></a>
+                                <a href="#"><span class="delete-icon">🗑️</span></a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Vit T-Shirt</td>
+                            <td>BBB111</td>
+                            <td>199</td>
+                            <td>
+                                <a href="#"><span class="edit-icon">✏️</span></a>
+                                <a href="#"><span class="delete-icon">🗑️</span></a>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div> 
+</main>
+
+<footer></footer>
 </body>
 </html>
