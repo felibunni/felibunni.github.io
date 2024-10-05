@@ -46,7 +46,62 @@
 </header>
 
 <main>
+    <section class="mcheckout">  
+        <h1>Kassan</h1>
+        <div class="mcheckout-products">
+            <div class="mproduct-summary">
+                <div class="mproducts">
+                    <div class="mcheckoutitem">
+                        <span>1 x Svart T-Shirt</span>
+                        <span class="mprice">199 SEK</span>
+                    </div>
+                        <div class="small">199 SEK</div>
+                </div>
 
+                <div class="mproducts">
+                    <div class="mcheckoutitem">
+                        <span>2 x Vit T-Shirt</span>
+                        <span class="mprice">398 SEK</span>
+                    </div> 
+                    <div class="small">199 SEK</div>
+                </div>
+            </div>
+        </div> 
+    </section>
+    <section class="customerinfo">
+        <h2>Kunduppgifter</h2>
+        <form class="customer-form">
+            <label for="firstName">Förnamn</label>
+            <input type="text" id="firstName" name="firstName">
+
+            <label for="lastName">Efternamn</label>
+            <input type="text" id="lastName" name="lastName">
+
+            <label for="email">E-post</label>
+            <input type="email" id="email" name="email">
+
+            <div class="address-details">
+                <div>
+                    <label for="address">Adress</label>
+                    <input type="text" id="address" name="address" class="address">
+                </div>
+                <div>
+                    <label for="postcode">Postnummer</label>
+                    <input type="text" id="postcode" name="postcode">
+                </div>
+                <div>
+                    <label for="city">Stad</label>
+                    <input type="text" id="city" name="city" class="city">
+                </div>
+            </div>
+
+            <div class="newletter">
+                <label><input type="checkbox" name="category">Jag vill ta emot nyhetsbrev</label>
+            </div>
+
+            <button type="submit">Köp</button>
+        </form>
+    </section>
 </main>
 
 <footer>
