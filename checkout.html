@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kassan</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+</head>
+<body>
+<header>
+    <div class="header">
+        <div class="logo-search">
+            <div>
+                <img src="/images/Logga.png" alt="Logotyp">
+            </div>
+        
+            <div class="search-nav">
+                <div class="search">
+                    <span class="search-icon material-symbols-outlined">search</span>
+                    <input class="search-input" placeholder="Sök produkt">
+                </div>
+                <div class="heart-basket">
+                    <div class="h-heart">
+                        <a href="#"><img src="/svg/heartfull.svg" alt="heart fill"></a>
+                    </div>
+                    <div class ="h-basket">
+                        <a href="checkout.html"><img src="/svg/basketfull.svg" alt="basket fill"></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+        <div class="nav">
+            <nav>
+                <ul class="nav-list">
+                    <li>Nyheter</li>
+                    <li class="categories">Kategorier</li>
+                    <li>Topplistan</li>
+                    <li>Rea</li>
+                    <li>Kampanjer</li>
+                </ul>
+            </nav> 
+        </div>
+    </div>
+</header>
+
+<main>
+
+</main>
+
+<footer>
+    <div class="footer">
+        <div class="footer-nav">
+            <div class="accordion">
+                <div class="content">
+                    <div class="footer-title">Shopping</div>
+                    <ul class="list">
+                         <li>Vinterjackor</li>
+                         <li>Pufferjackor</li>
+                         <li>Kappor</li>
+                         <li>Trenchcoats</li>
+                    </ul>
+                </div>
+    
+                <div class="content">
+                    <div class="footer-title">Mina Sidor</div>
+                    <ul class="list">
+                        <li>Mina Ordrar</li>
+                        <li>Mitt Konto</li>
+                    </ul>
+                </div>
+    
+                <div class="content">
+                    <div class="footer-title">Kundtjänst</div>
+                    <ul class="list">
+                        <li>Returnpolicy</li>
+                        <li>Integritetspolicy</li>
+                    </ul>
+                </div>          
+            </div>
+    
+            <div class="copyright">
+                <span>&copy;Freaky Fashion</span>
+            </div>
+        </div>
+    
+            <script>
+                const accordion = document.getElementsByClassName('content');
+    
+                for (i = 0; i<accordion.length; i++ ){
+                    accordion[i].addEventListener('click', function(){
+                        this.classList.toggle('active')
+                    })
+                }
+            </script>
+    </div>
+</footer>
+    
+</body>
+</html>

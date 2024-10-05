@@ -18,16 +18,48 @@
         <aside class="sidebar">
             <div>Produkter</div>
         </aside>
+
+        <form class="product-form">
+            <h1 class="new-product">Ny produkt</h1>
+            
+            <label id="name">Namn</label>
+            <input type="text" name="name" maxlength="50" placeholder="Ange namn" required>
     
-        <div class="">    
-            <div class="">
-                <span>Ny produkt</span>
+            <label id="description">Beskrivning</label>
+            <textarea name="description" maxlength="50" placeholder="Ange beskrivning"></textarea>
+            
+            <label id="image">Bild</label>
+            <input type="file" name="image" accept=".png,.jpg,.jpeg" required>
+            
+            
+            <label id="SKU">SKU</label>
+            <input type="text" name="sku" pattern="[A-Z]{3}[0-9]{3}" placeholder="Ange SKU" required>
+            
+            
+            <label id="price">Pris</label>
+            <input type="number" name="price">
+    
+            <label id="publish-date">Publiceringsdatum</label>
+            <input type="date" name="publish-date">
+            
+            <div class="categories">
+                <h2 id="categories">Kategorier</h2>
+                <div id="t-shirts">
+                    <label><input type="checkbox" name="category" value="tshirts"> T-Shirts</label>
+                </div>
+                <div id="sommar">
+                    <label><input type="checkbox" name="category" value="summer"> Sommar</label>
+                </div>
+                <div id="byxor">
+                    <label><input type="checkbox" name="category" value="pants"> Byxor</label>
+                </div>
+                <div id="skor">
+                    <label><input type="checkbox" name="category" value="shoes"> Skor</label>
+                </div>               
             </div>
-        
-            <div class="">
-                               
-            </div>
-        </div>
+    
+            <button type="submit" id="button">Lägg till</button>
+        </form>    
     </div> 
 </main>
 
