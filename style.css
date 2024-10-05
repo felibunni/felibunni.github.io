@@ -906,6 +906,12 @@ Too much copy paste to know what to change using min-width */
   font-size: 1.1rem;
 }
 
+#address {
+  font-family: garamond, georgia, serif;
+  font-size: 1.1rem;
+  margin-bottom: 3%;
+}
+
 .address-details {
   margin-top: 4%;
   margin-bottom: 4%;
@@ -952,6 +958,20 @@ Too much copy paste to know what to change using min-width */
   }
 }
 
+@media (min-width: 640px) {
+  .checkout-ifooter {
+    display: none;
+  }
+}
+
+@media (min-width: 640px) {
+  .customer-form button {
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+}
 
 /* Admin/products... */
 
