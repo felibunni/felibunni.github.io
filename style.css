@@ -889,8 +889,11 @@ Too much copy paste to know what to change using min-width */
   margin-left: 0;
 }
 
+.checkout table {
+  display: none;
+}
 .customer-form {
-  margin-left: 1%;
+  margin-left: 3%;
   margin-right: 3%;
   margin-bottom: 20px;
 }
@@ -933,6 +936,12 @@ Too much copy paste to know what to change using min-width */
 
 .checkout-ifooter {
   margin-top: 15%;
+}
+
+@media (min-width: 640px) {
+  .checkout table {
+    display: table;
+  }
 }
 
 @media (min-width: 640px) {
@@ -1054,11 +1063,11 @@ Too much copy paste to know what to change using min-width */
 
 .table-container {
   border: 1px solid black;
-  margin: 0 10px;
+  margin: 0 auto;
 }
 
 table {
-  width: 100%;
+  width: 94%;
   border-collapse: collapse;
 }
 
@@ -1100,7 +1109,6 @@ td, th {
 
 form {
   font-family: garamond, georgia, serif;
-  padding-left: 2%;
 }
 
 #name, #description, #image, #SKU, #price, #publish-date, #categories {
