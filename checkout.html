@@ -46,7 +46,7 @@
 </header>
 
 <main>
-    <section class="mcheckout">  
+    <section class="checkout">  
         <h1>Kassan</h1>
         <div class="mcheckout-products">
             <div class="mproduct-summary">
@@ -66,25 +66,57 @@
                     <div class="small">199 SEK</div>
                 </div>
             </div>
-        </div> 
+        </div>
+
+        <table class="table-container">
+            <thead>
+                <tr>
+                    <th>Produkt</th>
+                    <th>Antal</th>
+                    <th>Pris</th>
+                    <th>Totalt</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="firstproduct">
+                    <td>Svart T-shirt</td>
+                    <td>1</td>
+                    <td>199 kr</td>
+                    <td>199 kr</td>
+                </tr>
+                <tr>
+                    <td>Vit T-shirt</td>
+                    <td>2</td>
+                    <td>199 kr</td>
+                    <td>389 kr</td>
+                </tr>
+            </tbody>
+        </table>               
     </section>
+
     <section class="customerinfo">
         <h2>Kunduppgifter</h2>
         <form class="customer-form">
-            <label for="firstName">Förnamn</label>
-            <input type="text" id="firstName" name="firstName">
 
-            <label for="lastName">Efternamn</label>
-            <input type="text" id="lastName" name="lastName">
+            <div class="name">
+                <div>
+                    <label for="firstName">Förnamn</label>
+                    <input type="text" id="firstName" name="firstName">
+                </div>
+                <div>
+                    <label for="lastName">Efternamn</label>
+                    <input type="text" id="lastName" name="lastName">
+                </div>
+            </div>
 
             <label for="email">E-post</label>
             <input type="email" id="email" name="email">
 
-            <div class="address-details">
-                <div id="address">Address</div>
+            <fieldset class="address-details">
+                <legend id="address">Address</legend>
                 <div>
-                    <label for="address">Gata</label>
-                    <input type="text" id="street" name="Gata" class="gata">
+                    <label for="street">Gata</label>
+                    <input type="text" id="street" name="Gata">
                 </div>
                 <div>
                     <label for="postcode">Postnummer</label>
@@ -92,13 +124,12 @@
                 </div>
                 <div>
                     <label for="city">Stad</label>
-                    <input type="text" id="city" name="city" class="city">
+                    <input type="text" id="city" name="city">
                 </div>
-            </div>
+            </fieldset>
 
-            <div class="newletter">
-                <label><input type="checkbox" name="category">Jag vill ta emot nyhetsbrev</label>
-            </div>
+            <input type="checkbox" id="newsletter" name="newsletter">
+            <label for="newsletter">Jag vill ta emot nyhetsbrev</label>
 
             <button type="submit">Köp</button>
         </form>
