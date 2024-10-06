@@ -48,6 +48,7 @@ header {
 .search {
   width: max-content;
   display: flex;
+  flex-grow: 1;
   padding: 3px;
   margin-right: 10px;
   border-radius: 25px;
@@ -180,7 +181,6 @@ header {
   font-family: garamond, georgia, serif;
   font-size: 1em;
   text-align: center;
-  padding-bottom: 3%;
 }
 
 @media (min-width: 640px) {
@@ -241,9 +241,10 @@ header {
 
 @media (min-width: 1024px) {
   .hero-text {
-   padding-left: 5%;
-   padding-top: 10%;
-   padding-right: 5%;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   padding: 0 20px;
   }
 }
 
@@ -292,8 +293,14 @@ header {
 }
 
 .product {  /* Single product */
-  margin-bottom: 5%;
+  margin: 0 auto 5% auto;
   max-width: 500px;
+  position: relative;
+}
+
+.product a {
+  text-decoration: none;
+  color: black;
 }
 
 @media (min-width: 640px) {
@@ -320,13 +327,13 @@ header {
 /* Product card overlays */
 
 .product-image {
-  position: relative;
   display: inline-block;
   margin-bottom: 3%;
   margin-top: 2%;
   height: max-content;
   border: 1px dashed #d7d7d7;
 }
+
 
 .product img {
   width: 100%;
@@ -348,8 +355,8 @@ header {
 
 .heartfull {
   position: absolute;
-  bottom: 10px;
-  right: 10px;
+  bottom: 90px;
+  right: 20px;
   min-width: 29px;
   color: black;
   cursor: pointer;
@@ -357,8 +364,8 @@ header {
 
 .heartfull-2 {
   position: absolute;
-  bottom: 10px;
-  right: 10px;
+  bottom: 90px;
+  right: 20px;
   min-width: 29px;
   color: black;
   cursor: pointer;
@@ -367,8 +374,8 @@ header {
 
 .heartempty {
   position: absolute;
-  bottom: 10px;
-  right: 10px;
+  bottom: 90px;
+  right: 20px;
   min-width: 29px;
   cursor: pointer;
 }
