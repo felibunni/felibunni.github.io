@@ -10,15 +10,15 @@
   function RootLayout() {
     return (
       <>
-        <header role="banner"> 
+        <header> 
           <Header /> 
         </header>
 
-        <main id="page-content">
+        <main>
           <Outlet />
         </main>
 
-        <footer role="contentinfo">
+        <footer>
           <Footer />
         </footer>
       </>

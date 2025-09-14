@@ -1,6 +1,7 @@
+import './Header.css'
+
 function Header() {
   
-
   return (
     <>
       <h1>Felicia Bloom</h1>
