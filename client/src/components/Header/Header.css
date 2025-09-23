@@ -1,10 +1,13 @@
-/* h1 {
-  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
-  line-height: 1.5;
-  font-weight: 400;
-} */
+header {
+  padding: clamp(1rem, 5vmax, 4rem); /* based on html font size */
 
-h1 {
+  background-color: rgb(39, 39, 39);
+  color: rgba(255, 255, 255, 0.87);
+}
+
+/* Test for text gradient colouring */
+/* h1 {
+  font-family: "Delius";
  font-size: 4.2em;
  background-clip: text;
  background: linear-gradient(to bottom, rgb(255, 60, 92), rgb(253, 127, 148), rgb(253, 197, 197), white);
@@ -12,4 +15,4 @@ h1 {
  background-clip: text;   
  -webkit-text-fill-color: transparent;
  color: transparent;
-}
+} */
