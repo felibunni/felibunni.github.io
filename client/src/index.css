@@ -3,8 +3,18 @@
   color: rgba(255, 255, 255, 0.87);
 } */
 
-
-
 :root body, :root html, :root h1, :root header {
   margin: 0;
+}
+
+
+/* @list */
+ul {
+  list-style-type: none;
+  padding-inline-start: 0px;
+  margin: 0;
+}
+
+li {
+  margin: min(0.5rem);
 }

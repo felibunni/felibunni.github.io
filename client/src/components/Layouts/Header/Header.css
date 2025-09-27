@@ -5,6 +5,22 @@ header {
   color: rgba(255, 255, 255, 0.87);
 }
 
+/* @title */
+
+h1 {
+  text-align: center;
+}
+
+/* @nav */
+
+ul {
+  text-align: center;
+}
+
+li {
+  display: inline-block;
+}
+
 /* Test for text gradient colouring */
 /* h1 {
   font-family: "Delius";
