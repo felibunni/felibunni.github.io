@@ -1,0 +1,21 @@
+/* @general */
+
+#hero {
+  background-color: rgb(39, 39, 39);
+  color: rgba(255, 255, 255, 0.87);
+  padding: 20px;
+}
+
+h2, p {
+    text-align: center;
+}
+
+/* @title */
+
+h2 {
+    font-size: 2rem;
+}
+
+#subheading {
+    font-size: 1.5rem;
+}

@@ -5,6 +5,7 @@
   import Footer from './components/Layouts/Footer/Footer';
 
   import Home from './pages/Home/Home';
+  import About from './pages/About/About';
 
   //screen reader friendly structure with ARIA roles
   function RootLayout() {
@@ -33,6 +34,7 @@
         <Routes>
           <Route element={<RootLayout />}>
             <Route index element={<Home />} />
+            <Route path="/aboutme" element={<About />} />
           </Route>
         </Routes>
       </BrowserRouter>

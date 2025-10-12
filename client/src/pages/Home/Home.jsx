@@ -1,9 +1,11 @@
+import Hero from "../../components/Sections/Hero/Hero";
+
 function Home() {
   
 
   return (
     <>
-      
+      <Hero />
     </>
   )
 }
