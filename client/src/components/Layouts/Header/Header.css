@@ -1,14 +1,14 @@
+/* @general */
+
 header {
   padding: clamp(1rem, 5vmax, 4rem); /* based on html font size */
-
-  background-color: rgb(39, 39, 39);
-  color: rgba(255, 255, 255, 0.87);
 }
 
 /* @title */
 
 h1 {
   text-align: center;
+  font-size: 3rem;
 }
 
 /* @nav */
@@ -19,6 +19,10 @@ ul {
 
 li {
   display: inline-block;
+}
+
+ul li {
+  text-transform: uppercase;
 }
 
 /* Test for text gradient colouring */

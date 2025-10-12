@@ -1,12 +1,33 @@
-/* :root {
-  background-color: rgb(39, 39, 39);
-  color: rgba(255, 255, 255, 0.87);
-} */
+/* @general - Applies to all */
+/* @root */
 
-:root body, :root html, :root h1, :root header {
+:root {
+  font-size: 16px;
+}
+
+:root body, :root html, :root header {
   margin: 0;
 }
 
+/* @title */
+
+h1 {
+  margin: 1rem;
+}
+
+h2, h3, h4, h5, h6 {
+  margin: 0;
+}
+
+/* @link */
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+a:hover {
+  filter: invert(50%); /* @components need filter: none to override */
+}
 
 /* @list */
 ul {
@@ -16,5 +37,11 @@ ul {
 }
 
 li {
-  margin: min(0.5rem);
+  margin: 0.5rem; /* min-margin */
+}
+
+/* @paragraph */
+
+p {
+  margin: 0;
 }
